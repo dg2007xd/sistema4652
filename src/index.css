@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color1: #F5EEDC;
+    --color2: #27548A;
+    --color3: #183B4E;
+    --color4: #DDA853;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+}
+body{
+  font-family: Urbanist, sans-serif;
+}
+h1{
+  font-size: 4.5rem;
+  letter-spacing: -.2rem;
+  font-weight: 200;
+}
+h2{
+  font-size: 3rem;
+  letter-spacing: -.1rem;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+h3{
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.padded{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: var(--bs-list-group-active-color);
+  background-color: var(--color3);
+  border-color: var(--color3);
+}
+.page-item.active a{
+  background-color: var(--color3);
+}
+.page-link{
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.page-link:focus{
+  box-shadow: none;
+  background-color: var(--color4);
+  color: var(--color-blanco);
+}
+
+@media (min-width: 1580px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1500px;
+  }
+}

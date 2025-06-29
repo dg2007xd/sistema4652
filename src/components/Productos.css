@@ -1,0 +1,50 @@
+.precio-anterior{
+    font-size: 0.9em;
+    text-decoration: line-through;
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.porcentaje-descuento{
+    font-size: 0.8em;
+    background-color: var(--color4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+#cards-productos img{
+    transition: all 0.5s ease-in-out;
+}
+#cards-productos img:hover{
+    transform: scale(1.2);
+}
+#cards-productos .card{
+    overflow: hidden;
+}
+#cards-productos .card:hover .icon-quick-view{
+    top: 25%;
+}
+.icon-quick-view{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    background-color: var(--color-blanco);
+    padding: 6px 10px;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.icon-quick-view:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+}
+.icon-cart{
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.icon-cart:hover{
+    color: var(--color4);
+}

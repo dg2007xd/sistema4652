@@ -1,0 +1,7 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color4);
+    box-shadow: 0 -3px 0 var(--color4);
+}
+.navbar{
+    padding-top: 3px;
+}
