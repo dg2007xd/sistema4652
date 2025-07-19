@@ -12,6 +12,7 @@ import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
 import Directores from './pages/Directores'
 import Clientes from './pages/Clientes'
+import Pedidos from './pages/Pedidos'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/carrito" element={<Cart />} />
             <Route path="/directores" element={<Directores />} />
             <Route path="/clientes" element={<Clientes />} />
+            <Route path="/pedidos" element={<Pedidos />} />
           </Routes>     
         </main>
         

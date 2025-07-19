@@ -6,6 +6,7 @@ import axios from "axios";
 
 function Suppliers() {
     const [listaProveedores, setListaProveedores] = useState<Proveedor[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         leerServicio();
@@ -16,6 +17,7 @@ function Suppliers() {
             .then((response) => {
                 console.log(response)
                 setListaProveedores(response.data)
+                setLoading(false)
             })
             .catch((error) => {
                 console.error("Error consultando datos:", error);
@@ -67,12 +69,18 @@ function Suppliers() {
 
     }
 
+    const dibujarPreCarga = () => {
+        return (
+            <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
+        )
+    }
+
     return (
         <>
             <PageHeader pageTitle="Proveedores" />
             <section id="suppliers" className='padded'>
-                <div className="container">
-                    {dibujarTabla()}
+                <div className="container"> 
+                    {loading ? dibujarPreCarga(): dibujarTabla()}
                 </div>
             </section>
         </>
